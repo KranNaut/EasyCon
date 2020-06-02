@@ -1,0 +1,11 @@
+name: Dockerizer action
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: openjdk:14.0
+     - uses: actions/checkout@2
+     - name: docker build
+       run: |
+         docker build ./target/*.jar -t 
