@@ -4,8 +4,20 @@ on: [push]
 
 jobs:
   build:
-    runs-on: openjdk:14.0
-     - uses: actions/checkout@2
-     - name: docker build
-       run: |
-         docker build ./target/*.jar -t 
+    runs-on: ubuntu-latest
+    
+    
+    steps:
+      - uses: actions/checkout@2
+      - name: docker build
+        run: |
+         docker build ./target/*.jar -t  projectname:version
+      - name: docker login
+        env:
+         DOCKER_USER: ${{ secrets.DOCKER_USER}} 
+         DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD}}
+        run: |
+          docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
+      - name: docker push    
+        run: |
+          docker push projectname:version
