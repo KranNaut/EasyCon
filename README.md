@@ -14,10 +14,11 @@ A Template to accelerate
 
 ![](https://github.com/KranNaut/EasyCon/blob/master/screenshots/action.png)
 
-2. Click on the new workflow button. This will create a new yaml file under .github/workflows
+3. Click on the new workflow button. This will create a new yaml file under .github/workflows
 
-3. Copy the contents of [docker.yaml](https://github.com/KranNaut/EasyCon/blob/master/docker.yaml) file 
-5.Edit the name from project:version to the name of your project
+4. Copy the contents of [docker.yaml](https://github.com/KranNaut/EasyCon/blob/master/docker.yaml) file 
+
+5. Edit the name from project:version to the name of your project
 
 6. Create Two new secrets, DOCKER_USER and DOCKER_PASSWORD with the username and password of your docker hub account.
 
