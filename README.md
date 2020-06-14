@@ -8,7 +8,7 @@ A Template to accelerate
 
 
 
-# To Cotainerize the application we have used Github actions 
+# To Containerize the application we have used Github actions 
 1. Create the [Dockerfile](https://github.com/KranNaut/EasyCon/blob/master/Dockerfile) to your projects root folder
 
 
