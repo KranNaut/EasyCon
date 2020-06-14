@@ -13,4 +13,4 @@ spec:
       - name: container1
         image: project:version
         ports:
-        - containerPort: 80
+        - containerPort: 8080
