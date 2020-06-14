@@ -1,0 +1,16 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: Your_project_name
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: my-app
+    spec:
+      containers:
+      - name: container1
+        image: project:version
+        ports:
+        - containerPort: 80
