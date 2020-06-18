@@ -11,7 +11,7 @@ jobs:
       - uses: actions/checkout@2
       - name: docker build
         run: |
-         docker build .
+         docker build . -t project:version
       - name: docker login
         env:
          DOCKER_USER: ${{ secrets.DOCKER_USER}} 
