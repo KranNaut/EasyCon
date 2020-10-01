@@ -52,3 +52,7 @@ Make the neccesary changes in [deployment.yml](https://github.com/KranNaut/EasyC
 ```shell
 kubectl apply -f deployment.yml
 ```
+
+## License
+
+This repository follows [MIT License](LICENSE)
